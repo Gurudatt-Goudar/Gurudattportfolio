@@ -16,8 +16,9 @@ const About = () => {
         </div>
         <div className="about-right">
             <div className="about-phara">
-                <p>I'm Gurudatt Goudar, MCA graduate with expertise in web development.</p>
-                <p> I am expertise MERN stack, and blockchain solutions. Eager to contribute to cutting-edge projects while undergoing advanced training to further enhance my technical and professional skills.</p>
+                <p>Hi, I'm Gurudatt Goudar, an MCA graduate who thrives on blending creativity and logic in development.</p>
+                <p> For me, coding is more than just writing lines—it's about designing, developing, and delivering impactful solutions. With expertise in the MERN stack and blockchain technologies, 
+                  I specialize in crafting seamless and innovative digital experiences that drive growth and efficiency.</p>
             </div>
             <div className="about-skills">
                 <div className="about-skill"><p>HTML5 & CSS</p><hr style={{width:"50%"}}/> </div>
@@ -30,18 +31,18 @@ const About = () => {
       </div>
       <div className="about-achievements">
         <div className="about-achievement">
-            <h1>10+</h1>
-            <p>YEAR OF EXPERIENCE</p>
-        </div>
-        <hr />
-        <div className="about-achievement">
-            <h1>90+</h1>
+            <h1>3+</h1>
             <p>PROJECTS COMPLETED</p>
         </div>
         <hr />
         <div className="about-achievement">
-            <h1>15+</h1>
-            <p>HAPPY CLIENTS</p>
+            <h1>Tech Stack</h1>
+            <p>Specialized in MERN, Fullstack. and more</p>
+        </div>
+        <hr />
+        <div className="about-achievement">
+            <h1>Impactful Solutions</h1>
+            <p>Successfully crafted innovative solutions</p>
         </div>
       </div>
     </div>

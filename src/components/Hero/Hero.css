@@ -15,10 +15,11 @@
   }
 
   .hero h1{
-    text-align: cenetr;
-    width: 85%;
+    text-align: center;
+    width: 80%;
     font-size: 70px;
     font-weight: 600;
+    
   }
 
   .hero h1 span{
@@ -55,17 +56,19 @@
     padding: 25px 70px;
     border-radius: 50px;
     border: 2px solid white;
-    /* background: linear-gradient(267deg,#253164, 10.36%, #ed9ab3 102.06%); */
     cursor: pointer;
+    &:hover{
+      border: 2px solid rgb(128, 36, 220);
+    }
+  }
+  .hero-resume a{
+    text-decoration: none;
+    color: blanchedalmond;
   }
 
   .hero-connect:hover{
     border: 2px solid white;
   }
-
-  .hero-resume:hover{
-    border: 2px solid rgb(128, 36, 220);
-  } 
 
   @media(max-width:786px){
     .hero img{
