@@ -18,7 +18,7 @@ const App = () => {
       <MyWork/>
       <Contact/>
       <Footer/>
-      <img src="/vite.svg" alt="Vite Logo" />
+      {/* <img src="/vite.svg" alt="Vite Logo" /> */}
     </div>
   )
 }
