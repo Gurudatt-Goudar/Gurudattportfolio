@@ -3,50 +3,67 @@ import './Hero.css';
 import profile_img from '../../assets/profile_img.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+const CONTENT = {
+  name: 'Gurudatt Goudar',
+  titleLine: "I'm", // keeps the typed name effect natural
+  headlineSuffix: 'a Software Engineer focused on building reliable, user-friendly applications.',
+  blurb:
+    'I specialize in front-end development with Angular, back-end services in Java, and hands-on IoT integrations. I enjoy turning product ideas into performant, maintainable solutions.',
+  ctaConnect: 'Connect with Me',
+  ctaResume: 'View Resume',
+  resumeUrl:
+    'https://drive.google.com/file/d/1engafKmyxvfLRaluHpYCA1MslMRFmFHX/view?usp=sharing',
+};
+
+const TYPING_DELAY_MS = 150;
+
 const Hero = () => {
   const [typedName, setTypedName] = useState('');
-  const name = "Gurudatt Goudar";
 
   useEffect(() => {
     let index = 0;
     const typingInterval = setInterval(() => {
-      setTypedName((prev) => prev + name.charAt(index)); // Using charAt to ensure proper character is added
+      setTypedName(prev => prev + CONTENT.name.charAt(index));
       index += 1;
-      if (index === name.length) {
-        clearInterval(typingInterval);
-      }
-    }, 150);  // Adjust typing speed here
+      if (index === CONTENT.name.length) clearInterval(typingInterval);
+    }, TYPING_DELAY_MS);
 
     return () => clearInterval(typingInterval);
   }, []);
 
   return (
-    <div id='home' className='hero'>
-      <img src={profile_img} alt="Profile" />
+    <div id="home" className="hero">
+      <img src={profile_img} alt={`${CONTENT.name} profile photo`} />
       <h1>
-        <span>I'm {typedName},</span> an MCA graduate with expertise in web development.
+        <span>{CONTENT.titleLine} {typedName},</span> {CONTENT.headlineSuffix}
       </h1>
-      <p>
-        I specialize in the MERN stack and blockchain solutions and am eager to contribute to innovative projects
-        while continuously enhancing my skills through advanced training.
-      </p>
+      <p>{CONTENT.blurb}</p>
+
       <div className="hero-action">
         <div className="hero-connect">
-          <AnchorLink className='anchorlink' offset={50} href='#contact'>Connect with Me</AnchorLink>
+          <AnchorLink
+            className="anchorlink"
+            offset={50}
+            href="#contact"
+            aria-label="Scroll to contact section"
+          >
+            {CONTENT.ctaConnect}
+          </AnchorLink>
         </div>
         <div className="hero-resume">
           <a
-            href="https://drive.google.com/file/d/1engafKmyxvfLRaluHpYCA1MslMRFmFHX/view?usp=sharing"
-            target='_blank'
-            download
+            href={CONTENT.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="resume-link"
+            aria-label="Open resume in a new tab"
           >
-            My Resume
+            {CONTENT.ctaResume}
           </a>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Hero;
