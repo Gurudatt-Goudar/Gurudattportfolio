@@ -1,3 +1,5 @@
+src/components/Hero/Hero.jsx
+
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
 import profile_img from '../../assets/profile_img.jpg';
@@ -5,14 +7,12 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const CONTENT = {
   name: 'Gurudatt Goudar',
-  titleLine: "I'm", // keeps the typed name effect natural
-  headlineSuffix: 'a Software Engineer focused on building reliable, user-friendly applications.',
-  blurb:
-    'I specialize in front-end development with Angular, back-end services in Java, and hands-on IoT integrations. I enjoy turning product ideas into performant, maintainable solutions.',
-  ctaConnect: 'Connect with Me',
-  ctaResume: 'View Resume',
-  resumeUrl:
-    'https://drive.google.com/file/d/1engafKmyxvfLRaluHpYCA1MslMRFmFHX/view?usp=sharing',
+  titleLine: "I'm",
+  headlineSuffix: 'a Software Developer building industrial IoT platforms and enterprise systems.',
+  blurb: 'I architect and implement enterprise-grade dashboard systems, custom widget libraries, and scalable frontend solutions that transform industrial data into actionable insights.',
+  ctaConnect: 'Discuss a Project',
+  ctaResume: 'View Experience',
+  resumeUrl: 'https://drive.google.com/file/d/1engafKmyxvfLRaluHpYCA1MslMRFmFHX/view?usp=sharing',
 };
 
 const TYPING_DELAY_MS = 150;
