@@ -1,10 +1,13 @@
-import React from 'react'
+src/components/MyWork/MyWork.jsx
+
+import React, { useState } from 'react'
 import './MyWork.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import mywork_data from '../../assets/mywork_data'
-import arrow_icon from '../../assets/arrow_icon.svg'
 
 const MyWork = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
     <div id='work' className='mywork'>
       <div className="mywork-title">
@@ -13,13 +16,29 @@ const MyWork = () => {
       </div>
       <div className="mywork-container">
          {mywork_data.map((work,index)=>{
-            return <img key={index} src={work.w_img} alt=''/>
+            return (
+              <div 
+                key={index} 
+                className="mywork-item"
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <img src={work.w_img} alt={work.w_title}/>
+                {hoveredIndex === index && (
+                  <div className="work-tooltip">
+                    <h3>{work.w_title}</h3>
+                    <p>{work.w_desc}</p>
+                    <div className="work-tags">
+                      <span>Angular</span>
+                      <span>DeviceBoard</span>
+                      <span>IoT</span>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )
          })}
       </div>
-      {/* <div className="mywork-showmore">
-        <p>Show More</p>
-        <img src={arrow_icon} alt="" />
-      </div> */}
     </div>
   )
 }
