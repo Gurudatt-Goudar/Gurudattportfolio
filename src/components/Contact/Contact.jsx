@@ -1,3 +1,5 @@
+src/components/Contact/Contact.jsx
+
 import React from 'react'
 import './Contact.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
@@ -30,7 +32,6 @@ const Contact = () => {
         }
       };
 
-
   return (
     <div id='contact' className='contact'>
         <div className="contact-title">
@@ -40,9 +41,7 @@ const Contact = () => {
         <div className="contact-section">
             <div className="contact-left">
                 <h1>Let's Talk</h1>
-                <p>I’d love to hear from you. Whether you have a question, want to collaborate on a project,
-                    or just want to chat, feel free to reach out. 
-                    I'm open to new opportunities and excited to network with like-minded individuals.</p>
+                <p>I'm always open to conversations about industrial IoT, enterprise dashboard systems, or frontend architecture challenges. Whether you're building a new platform, scaling an existing system, or untangling a complex frontend, let's talk about how we can create something meaningful together.</p>
                 <div className="contact-details">
                     <div className="contact-detail">
                         <img src={mail_icon} alt="" /><p>gurudattgoudar090@gmail.com</p>
@@ -51,7 +50,7 @@ const Contact = () => {
                         <img src={call_icon} alt="" /><p>+919591118461</p>
                     </div>
                     <div className="contact-detail">
-                        <img src={location_icon} alt="" /><p>Dharwad, Karnataka</p>
+                        <img src={location_icon} alt="" /><p>Bengaluru, Karnataka</p>
                     </div>
                 </div>
             </div>
@@ -60,9 +59,9 @@ const Contact = () => {
                 <input type="text" name="name" id="" placeholder='Enter Your Name' />
                 <label htmlFor="">Your Email</label>
                 <input type="email" name="email" id="" placeholder='Enter Your Email' />
-                <label htmlFor="">Write Your Message Here</label>
-                <textarea name="message" rows="8" placeholder='Enter Your Message'></textarea>
-                <button type='submit' className='contact-submit'>Submit</button>
+                <label htmlFor="">Message</label>
+                <textarea name="message" rows="8" placeholder='What would you like to discuss?'></textarea>
+                <button type='submit' className='contact-submit'>Send Message</button>
             </form>
         </div>
     </div>
