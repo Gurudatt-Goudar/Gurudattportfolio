@@ -1,34 +1,36 @@
+src/assets/services_data.js
+
 const Services_Data = [
-    {
-        s_no: "01",
-        s_name: "Web Development",
-        s_desc: "I specialize in building responsive and user-friendly websites using the latest web technologies. From front-end design to back-end development, I create seamless experiences for users."
-    },
-    {
-        s_no: "02",
-        s_name: "Full-Stack Development",
-        s_desc: "With expertise in the MERN stack (MongoDB, Express, React, Node.js), I develop robust, scalable, and secure web applications tailored to meet client needs."
-    },
-    {
-        s_no: "03",
-        s_name: "UI/UX Design",
-        s_desc: "I design intuitive and visually appealing user interfaces that prioritize user experience. My focus is on creating designs that are both functional and aesthetically pleasing."
-    },
-    {
-        s_no: "04",
-        s_name: "AI/ML Solutions",
-        s_desc: "I integrate artificial intelligence and machine learning into applications to drive innovation, improve functionality, and provide actionable insights based on data."
-    },
-    {
-        s_no: "05",
-        s_name: "Cloud Computing",
-        s_desc: "I help businesses migrate to cloud platforms, ensuring scalability, security, and efficiency. I work with cloud services like AWS, Azure, and Google Cloud to deploy and manage solutions."
-    },
-    {
-        s_no: "06",
-        s_name: "Content Writing & Strategy",
-        s_desc: "I offer content creation services that help businesses engage with their audience. From technical blogs to marketing copy, I write content that aligns with your goals and brand voice."
-    },
-]
- 
+  {
+    s_no: "01",
+    s_name: "Enterprise Frontend Architecture",
+    s_desc: "Designing and implementing scalable Angular applications with modular architecture, reusable component libraries, and maintainable codebases. Specializing in enterprise UI systems that handle complex business logic while maintaining performance and usability."
+  },
+  {
+    s_no: "02",
+    s_name: "IoT Dashboard Development",
+    s_desc: "Building industrial-grade dashboard systems for real-time monitoring, digital twins, and telemetry visualization using DeviceBoard platform. Creating intuitive interfaces that translate complex industrial data into actionable insights for operators and decision-makers."
+  },
+  {
+    s_no: "03",
+    s_name: "Platform Customization & Rebranding",
+    s_desc: "Leading platform rebranding initiatives, white-label systems, and theme customization for enterprise deployments. Implementing consistent design systems across large-scale applications while maintaining functionality and user experience."
+  },
+  {
+    s_no: "04",
+    s_name: "Role-Based Access Systems",
+    s_desc: "Implementing RBAC/ABAC systems for enterprise applications with granular permission controls, user management interfaces, and audit trails. Designing intuitive admin panels that simplify complex permission management for system administrators."
+  },
+  {
+    s_no: "05",
+    s_name: "AI/ML Integration Frontends",
+    s_desc: "Developing configuration interfaces for anomaly detection, prediction workflows, and machine learning pipelines. Building UIs that simplify complex AI/ML configuration while ensuring proper data flow and user feedback throughout the training lifecycle."
+  },
+  {
+    s_no: "06",
+    s_name: "Custom Widget Development",
+    s_desc: "Creating specialized HTML/CSS/JavaScript widgets for industrial dashboards with mobile responsiveness, real-time data updates, and interactive visualization. Building widget libraries that extend platform capabilities for specific industry needs."
+  }
+];
+
 export default Services_Data;
